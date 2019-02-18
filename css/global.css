@@ -1,12 +1,30 @@
 @font-face {
     font-family: 'My Lucida';
     src: url('../font/LucidaGrande.ttf');
-    font-style: normal; 
+    font-style: normal;
     font-weight: bold;
 }
 
-* { 
+* {
     font-family: 'My Lucida', Console;
+}
+
+@media screen and (max-width: 1400px) {
+    * {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        font-size: .75em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    * {
+        font-size: .5em;
+    }
 }
 
 body {
@@ -99,6 +117,11 @@ h1 {
     margin-left: 12px;
 }
 
+@media screen and (max-device-width: 480px) {
+    .name p img {
+        display: none;
+    }
+}
 
 .stats-links {
     color: #4b5c66;
@@ -146,9 +169,17 @@ input.search {
     box-shadow: inset 1px 1px 5px #d5d5d5;
 }
 
+
+@media screen and (max-width: 700px) {
+    input.search {
+        display: none;
+    }
+}
+
 input.submit {
     display: none;
 }
+
 
 .station {
     font-size: .75em;
